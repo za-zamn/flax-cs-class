@@ -1,0 +1,59 @@
+.navbar {
+  padding: 5px 20px;
+  color: #dad7cd;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-items: center;
+} 
+
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  padding: 10px;
+  height: 5px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.main-nav {
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.nav-item:hover {
+  color: #a3b18a;
+}
+
+.plus-sign {
+  font-size: x-large;
+} .plus-sign:hover {
+  font-size: xx-large;
+}
+
+.dropdown {
+  display: none;
+  opacity: 0.7;
+  width: 40px;
+}
+.dropdown:hover {
+  opacity: 1;
+}
+
+/* Insert @Media queries here! */
+@media (max-width: 992px) {
+  .main-nav {
+    justify-content: center;
+  }
+  .nav-item {
+    display: none;
+  }
+  .plus-sign {
+    display: none;
+  }
+  .dropdown {
+    display: inline;
+  }
+}

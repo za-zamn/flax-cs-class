@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: smaller;
+}
+
+legend {
+  text-align: center;
+}
+
+#label {
+  font-size: xx-large;
+}
+
+.container {
+  display: flex;
+  margin: 50px auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+legend {
+  font-size: smallest;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sausage {
+  background-image: radial-gradient(#611717 20%, transparent 20%),
+    radial-gradient(#4a1515 20%, transparent 20%);
+}
+
+.jalapeno {
+  background-image: radial-gradient(#548042 20%, transparent 20%),
+    radial-gradient(#548042 20%, transparent 20%);
+
+}
+
+.mushroom {
+  background-image: radial-gradient(#A69085 20%, transparent 20%),
+    radial-gradient(#A69085 20%, transparent 20%);
+}
+
+.olive {
+  background-image: radial-gradient(#2f302b 20%, transparent 20%),
+    radial-gradient(#2f302b 20%, transparent 20%);
+}
+
+.topping {
+  background-position: 0 0, 20px 20px;
+  background-size: 40px 40px;
+  width: 150px;
+  height: 150px;
+  border: solid #b78b43 4px;
+  border-radius: 50%;
+}
+.pineapple {
+  background-image: linear-gradient(45deg, #fee12b 20%, transparent 20%),
+    linear-gradient(-45deg, #fee12b 20%, transparent 20%);
+  background-position: 0 0, 35px 35px;
+  background-size: 35px 35px;
+}
+
+.pepperoni {
+  background-image: radial-gradient(#b21414 20%, transparent 20%),
+    radial-gradient(#ce2222 20%, transparent 20%);
+  background-position: 0 0, 35px 35px;
+  background-size: 70px 70px;
+}
+
+.card {
+  padding: 20px 20px 0px;
+  align-items: center;
+} .card:hover {
+  box-shadow: 1px 1px 2px 1px;
+}
+
+.selected {
+  background-color: ivory !important;
+  box-shadow: 1px 1px 2px 1px;
+}
+
+#price {
+  font-size: xx-large;
+}
+
+.sr-only {
+  display: none;
+}

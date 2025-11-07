@@ -1,0 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#my-navbar {
+  padding: 20px 120px 0px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+}
+
+#n-left {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#n-right {
+  align-items: center;
+  text-align: right;
+}
+
+#n-logo {
+  max-width: 150px;
+  border-radius: 20px;
+}
+
+#skyline {
+  background-image: url("img/san-diego-skyline.jpg");
+  background-size: auto 100%;
+  opacity: 0.9;
+
+  align-items: flex-end;
+  padding: 50px;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 5px 1px;
+}
+
+.hoverable:hover {
+  box-shadow: 1px 1px 5px 1px;
+}
+
+.shadow {
+  box-shadow: 1px 1px 10px 1px;
+}
+
+@media (max-width: 1250px) {
+  #n-right {
+    display: none;
+  }
+
+  form {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #book-button {
+    grid-column: 2;
+  }
+
+  #n-logo {
+    margin: auto;
+  }
+}

@@ -1,0 +1,22 @@
+html {
+   width: 100%;
+   height: 75%
+}
+
+.grid-item
+{
+ border: 4px solid black;
+}
+
+div{
+   background-color: thistle;
+}
+
+body{
+
+   display: grid;
+   grid-template-columns:
+   1fr 1fr 1fr 1fr;
+   grid-template-rows:
+   1fr 1fr;
+}

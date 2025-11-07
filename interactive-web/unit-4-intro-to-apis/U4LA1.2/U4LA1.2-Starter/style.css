@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 100px;
+  background-color: cornflowerblue;
+}
+
+#header {
+  margin-bottom: 75px;
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+}
+
+#questions {
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 100px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.card-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-input {
+  min-width: 30vw;
+  font-size: large;
+  
+}
+
+.input {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 10px;
+  font-size: large;
+}

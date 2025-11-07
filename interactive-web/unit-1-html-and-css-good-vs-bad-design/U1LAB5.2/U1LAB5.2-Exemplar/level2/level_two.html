@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="level_two.css" />
+    <title>Level 2</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>The Quickest Personality Quiz</h1>
+      <form action="#">
+        
+        <fieldset class="question" id="q1">
+          <legend>Select your favorite Lucky Number:</legend>
+          <input type="radio" id="seven" name="lucky_number" value="7" />
+          <label for="seven">7</label><br />
+          <input type="radio" id="nine" name="lucky_number" value="9" />
+          <label for="nine">9</label><br />
+          <input type="radio" id="thirteen" name="lucky_number" value="13" />
+          <label for="thirteen">13</label><br />
+          <input type="radio" id="twentyone" name="lucky_number" value="21" />
+          <label for="twentyone">21</label><br />
+          <input type="radio" id="twentythree" name="lucky_number" value="23" />
+          <label for="twentythree">23</label><br />
+        </fieldset>
+        
+        <fieldset class="question" id="q2">
+          <legend>Which toppings would you put on pizza? (Select all that apply)</legend>
+          <input type="checkbox" id="meat" name="pizza_topping" value="meat" />
+          <label for="meat">Pepperoni or Sausage</label><br />
+          <input type="checkbox" id="mushroom" name="pizza_topping" value="mushroom" />
+          <label for="mushroom">Mushroom</label><br />
+          <input type="checkbox" id="pineapple" name="pizza_topping" value="pineapple" />
+          <label for="pineapple">Pineapple</label><br />
+          <input type="checkbox" id="olives" name="pizza_topping" value="olives" />
+          <label for="olives">Olives</label><br />
+          <input type="checkbox" id="jalapeño" name="pizza_topping" value="jalapeño" />
+          <label for="jalapeño">Jalapeño</label><br />
+        </fieldset>
+
+        
+        <fieldset class="question" id="q3">
+          <legend>Pick a Getaway Location</legend>
+          <div class="q3-item">
+            <input type="radio" id="cabin" name="getaway" value="cabin" />
+            <label for="cabin">
+              <img src="img/cabin.jpg" alt="A cold snowy mountain with a small cabin in the distance." />
+            </label>
+          </div>
+          <div class="q3-item">
+            <input type="radio" id="space" name="getaway" value="space" />
+            <label for="space" >
+              <img src="img/space.jpg" alt="Unidentified Flying Object flying in space." />
+            </label>
+          </div>
+          <div class="q3-item">
+            <input type="radio" id="culture" name="getaway" value="culture" />
+            <label for="culture" >
+              <img src="img/culture.jpg" alt="Live music being played in the streets of New Orleans" />
+            </label>
+          </div>
+          <div class="q3-item">
+            <input type="radio" id="room" name="getaway" value="room" />
+            <label for="room">
+              <img src="img/room.jpg" alt="Cozy, slightly messy bedroom"/>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="info">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="user_name" placeholder="Name" autocomplete="name"/>
+        </div>
+
+        <div class="info">
+          <label for="email">You Email</label>
+          <input type="text" id="email" name="user_email" placeholder="email@email.com" autocomplete="email" /><br />
+        </div>
+
+        <input type="submit" name="submit" value="Submit Quiz"/>
+        
+      </form>
+    </div>
+  </body>
+</html>

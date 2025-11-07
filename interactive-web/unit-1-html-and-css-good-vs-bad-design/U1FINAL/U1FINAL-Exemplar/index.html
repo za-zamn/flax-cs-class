@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Travel Page</title>
+  </head>
+  <body>
+    <div class="navbar is-fixed-top is-flex-direction-column shadow">
+      <!-- Navbar -->
+      <nav
+        class="navbar has-background-primary-dark px-5"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-text-white"> Get togethers </a>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-text-white"> Full packages </a>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-text-white"> Press kits </a>
+            </div>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link has-text-white"> Language </a>
+
+              <div class="navbar-dropdown">
+                <a class="navbar-item"> English </a>
+                <a class="navbar-item"> Spanish </a>
+                <a class="navbar-item"> Chinese </a>
+                <hr class="navbar-divider" />
+                <a class="navbar-item"> More languages </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- 2nd Navbar -->
+      <div id="my-navbar" class="columns">
+        <div id="n-left" class="column columns">
+          <img
+            src="img/san-diego-logo.jpg"
+            alt="San Diego Sign"
+            id="n-logo"
+            class="column"
+          />
+          <a class="n-title column">EXPLORE</a>
+          <a class="n-title column">PLAN</a>
+          <a href="#scroll" class="n-title column">STAY</a>
+        </div>
+        <div id="n-right" class="column is-one-half">
+          <p class="n-title">Currently 72°F</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero is-fullheight-with-navbar">
+      <div id="skyline" class="hero-body">
+        <p class="heading has-text-white is-1 mb-5">Come stay at</p>
+        <p class="title has-text-white is-1 mb-4">&nbsp; San Diego</p>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <div class="section">
+      <div class="container">
+        <div class="title">Beachside attitude, Big city excitement</div>
+        <p id="scroll" class="mb-5">
+          San Diego is the place to be. The weather is near perfect year-round
+          at 72 degrees, and there is always so much to enjoy. There are
+          world-class attractions, urban life, stunning art, and an even more
+          stunning nightlife scene. San Diego is the beach to go to here on the
+          west coast.
+        </p>
+        <p>
+          After a day at the beach or other outdoor adventure, head to the party
+          downtown at one of the sizzling nightclubs or rooftop bars. If art and
+          culture is your passion, you'll find an exciting hub of creativity in
+          San Diego. Often referred to as the “Smithsonian of the West,” Balboa
+          Park features 17 museums, numerous galleries and performing arts
+          venues as well as the San Diego Zoo. It's hard to find a better
+          destination for families. Whether you love engaging with animals or
+          thrill rides, building sandcastles or beach bonfires, there's plenty
+          to entertain the entire family from sun up to sun down.
+        </p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div id="form" class="section has-background-light has-text-centered">
+      <div class="title">Find a place to stay</div>
+      <form action="#" class="columns">
+        <fieldset class="field column">
+          <label for="start_date" class="label">Arrival Day *</label>
+          <div class="control">
+            <input id="start_date" type="date" />
+          </div>
+        </fieldset>
+        <fieldset class="field column">
+          <label for="end_date" class="label">Departure Day *</label>
+          <div class="control">
+            <input id="end_date" type="date" />
+          </div>
+        </fieldset>
+        <fieldset class="field column">
+          <label for="email" class="label">Email *</label>
+          <div class="control">
+            <input id="email" type="text" placeholder="email@email.com" />
+          </div>
+        </fieldset>
+        <fieldset class="field column">
+          <label for="rooms" class="label">Rooms *</label>
+          <div class="control">
+            <input id="rooms" type="number" value="1" />
+          </div>
+        </fieldset>
+        <fieldset class="field column">
+          <label for="adults" class="label">Adults *</label>
+          <div class="control">
+            <input id="adults" type="number" value="1" />
+          </div>
+        </fieldset>
+        <fieldset class="field column">
+          <label for="kids" class="label">Kids *</label>
+          <div class="control">
+            <input id="kids" type="number" value="0" />
+          </div>
+        </fieldset>
+        <fieldset id="book-button" class="field column">
+          <div class="control">
+            <button class="button">BOOK NOW</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- Attractions -->
+    <section class="hero has-background-primary-light">
+      <div class="hero-body has-text-centered">
+        <p class="title">Discover San Diego</p>
+        <p class="subtitle">WHAT'S GOING ON</p>
+        <div id="cards" class="columns">
+          <figure class="column m-1 hoverable">
+            <img src="img/football.jpg" alt="Football Game" />
+          </figure>
+          <figure class="column m-1 hoverable">
+            <img src="img/beach.jpg" alt="Sunny beach" />
+          </figure>
+          <figure class="column m-1 hoverable">
+            <img src="img/nightlife1.jpg" alt="Downtown San Diego at Night" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Articles -->
+    <div class="section">
+      <div class="container mb-5">
+        <p class="title">Explore Articles</p>
+        <p class="subtitle">
+          Find more information on what to do and where to go in San Diego.
+          Click the button to see even more articles.
+        </p>
+        <button class="button">VIEW MORE</button>
+      </div>
+      <div class="columns mt-5">
+        <div class="card column m-3">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/transit.jpg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">Getting To and From in San Diego</div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">Read Now 📖</a>
+            <a href="#" class="card-footer-item">Share ✈️</a>
+          </footer>
+        </div>
+        <div class="card column m-3">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/botanical.jpg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">Botanical Gardens</div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">Read Now 📖</a>
+            <a href="#" class="card-footer-item">Share ✈️</a>
+          </footer>
+        </div>
+        <div class="card column m-3">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/caves.jpg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">Beaches and Secrets</div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">Read Now 📖</a>
+            <a href="#" class="card-footer-item">Share ✈️</a>
+          </footer>
+        </div>
+        <div class="card column m-3">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="img/nightlife2.jpg" alt="Placeholder image" />
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="content">Sand Diego Nightlife</div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">Read Now 📖</a>
+            <a href="#" class="card-footer-item">Share ✈️</a>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          This website was brought to you by a true fan of the city of San
+          Diego. It was made using Bulma and some custom CSS using mostly
+          Flexbox.
+        </p>
+        <p>
+          I hope this inspires you to come to this beautiful city.
+          Cheers!
+        </p>
+        <p>
+          Copyright ©2022
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

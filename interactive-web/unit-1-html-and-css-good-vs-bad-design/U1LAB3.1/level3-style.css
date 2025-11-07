@@ -1,0 +1,43 @@
+/* Selects all div elements where the parent element has a class container AKA all of the individual blocks in the grid */
+.container > div {
+  align-items: center;
+  border: solid grey thin;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+
+body {
+  margin: 20px;
+}
+
+
+.day-title {
+  background-color: #f29b9b;
+}
+
+.no-school {
+  background-color: #d3d4d2;
+}
+
+.school {
+  background-color: #fae593;
+}
+
+.weekend {
+  background-color: #9fcc8b;
+}
+
+.event {
+  background-color: #e36666;
+}
+
+.half-day {
+  background-color: #f59a73;
+}
+
+.winter-break {
+  background-color: #8baacc;
+}

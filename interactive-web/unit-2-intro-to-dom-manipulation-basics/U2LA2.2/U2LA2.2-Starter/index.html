@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart - QuerySelector Lesson</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container content has-text-centered">
+      <section class="section">
+        <h1 class="title">Welcome to E-Foods</h1>
+        <p>Click an item to add it to your cart.</p>
+        <div id="button-group" class="columns">
+          <div class="column">
+            <button class="button" id="apple">🍎 Apple: $0.75</button>
+          </div>
+          <div class="column">
+            <button class="button" id="banana">🍌 Banana: $0.30</button>
+          </div>
+          <div class="column">
+            <div class="button" id="mango">🥭 Mango: $1.25</div>
+          </div>
+        </div>
+        <div id="single-button">
+          <div id="clear-button">
+            <label aria-hidden="true" for="empty-image">Empty Your Cart</label><br>
+            <img aria-hidden="true" id="empty-image" src="img/empty.png" alt="Empty Cart">
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h3>Your Items:</h3>
+        <div id="shopping-cart"></div>
+        <h4>Your total: $<span id="total-span">0</span></h4>
+      </section>
+    </div>
+  </body>
+</html>

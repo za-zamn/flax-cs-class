@@ -1,0 +1,48 @@
+img {
+  width: 300px;
+}
+
+h2 {
+  color: #e63946;
+}
+
+#header {
+  background-color: #f1faee;
+}
+
+.section {
+  background-color: #a8dadc;
+}
+
+.feature {
+  background-color: #457b9d;
+  color: #f1faee;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: 8px 8px 5px grey;
+}
+
+body {
+  margin: 30px;
+}
+
+div {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#quote {
+  margin-left: 20px;
+}
+
+#main-image {
+  width: 400px;
+
+  display: block;
+  margin: auto;
+}

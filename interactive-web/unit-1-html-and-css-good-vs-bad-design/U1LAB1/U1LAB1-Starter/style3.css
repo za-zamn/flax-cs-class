@@ -1,0 +1,46 @@
+html, body {
+  height: 200%;
+  width: 100%;
+	background-color: #68a6a6;
+}
+
+#title {
+  color: #396463;
+	background-color: #a8dfdd;
+	border: 1.5px dashed;
+	border-color: 396463;
+}
+
+
+
+.div1{
+	background-color:#a8dfdd;
+	border: 1.5px solid;
+	border-radius: 25px;
+	border-color: #396463;
+	color: #396463;
+}
+
+.div2{
+	color: #ffffff;
+}
+
+.div3{
+
+	color: #a8dfdd;
+}
+
+.yellow{
+	background-color:#F2EBC7;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color: #FFFFFF;
+}
+
+img {
+  max-width: 80%;
+}
+
+#header {
+  background-color: #d4a373;
+}

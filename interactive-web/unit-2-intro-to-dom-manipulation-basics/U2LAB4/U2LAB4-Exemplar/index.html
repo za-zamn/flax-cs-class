@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Light Bulb Puzzle</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <h1>Try to get all the lights on!</h1>
+    <button tabindex="0" id="sr-audio" class="sr-only">Announce Current Light Status</button>
+    <div id="wrapper">
+      <div class="row">
+        <div class="light">
+          <div id="lightbulb1" class="item lightbulb">💡</div>
+          <label class="switch" for="lightbulb1">
+            <input aria-label="switch 1" id="switch1" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="light">
+          <div id="lightbulb2" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input aria-label="switch 2" id="switch2" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="light">
+          <div id="lightbulb3" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input aria-label="switch 3" id="switch3" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="light">
+          <div id="lightbulb4" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input  aria-label="switch 4" id="switch4" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="light">
+          <div id="lightbulb5" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input aria-label="switch 5" id="switch5" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="light">
+          <div id="lightbulb6" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input aria-label="switch 6" id="switch6" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="light">
+          <div id="lightbulb7" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input aria-label="switch 7" id="switch7" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="light">
+          <div id="lightbulb8" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input aria-label="switch 8" id="switch8" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="light">
+          <div id="lightbulb9" class="item lightbulb">💡</div>
+          <label class="switch">
+            <input aria-label="switch 9" id="switch9" type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="status" aria-live="assertive" aria-atomic="true" class="sr-only"> 
+      <!-- initially blank --> 
+    </div>
+    
+    <!--Connect your script here-->
+    <script src="script.js"></script>
+
+  </body>
+</html>

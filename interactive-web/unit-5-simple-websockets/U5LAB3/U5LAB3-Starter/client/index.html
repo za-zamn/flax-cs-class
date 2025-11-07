@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="US-en">
+  <head>
+    <title>Mesg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf8" />
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/solid.min.css" integrity="sha512-bdTSJB23zykBjGDvyuZUrLhHD0Rfre0jxTd0/jpTbV7sZL8DCth/88aHX0bq2RV8HK3zx5Qj6r2rRU/Otsjk+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="utilities.js" defer></script>
+    <script type="module" src="users.js" defer></script>
+    <script type="module" src="dom.js" defer></script>
+    <script type="module" src="handlers.js" defer></script>
+    <script type="module" src="actions.js" defer></script>
+    <script type="module" src="runtime.js" defer></script>
+    <script type="module" src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="application-log">
+      <div class="application-log-wrapper">
+        <header>
+          <h1>Mesg</h1>
+          <section id="users">
+            <h2>Viewer</h2>
+            <p>View as:</p>
+            <ul></ul>
+          </section>
+          <div id="runtime-controls">
+            <label for="speed">Speed:</label>
+            <input
+              id="speed"
+              type="range"
+              min="1"
+              max="10"
+              step="1"
+            />
+            <button id="pause"></button>
+          </div>
+        </header>
+        <main>
+          <section id="chat-messages">
+            <h2 id="chat-messages-heading">Chat</h2>
+            <ol class="log" aria-labelledby="chat-messages-heading" role="log">
+            </ol>
+          </section>
+          <section id="socket-messages" aria-labelledby="socket-messages-heading">
+            <h2 id="socket-messages-heading">Socket Messages</h2>
+            <ol class="log" role="log"></ol>
+          </section>
+          <section id="user-list" aria-labelledby="users-heading">
+            <h2 id="users-heading">Users</h2>
+            <ol class="log" aria-labelledby="users-heading"></ol>
+          </section>
+          <section id="channels">
+            <h2 id="channels-heading">Rooms</h2>
+            <ol class="log" aria-labelledby="channels-heading"></ol>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

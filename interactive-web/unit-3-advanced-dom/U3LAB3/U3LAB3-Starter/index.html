@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Card Organizer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body class="is-flex is-flex-direction-column is-justify-content-space-between">
+    
+    <section class="hero is-small notification has-background-info has-text-centered">
+      <div class="hero-body"></div>
+    </section>
+
+    <div class="title has-text-centered">Card Organizer</div>
+    <section class="section">
+      <div class="box p-4">
+        <h1>Holding Zone</h1>
+        <div class="cards">
+          <!-- Grid of Cards -->
+          <button class="card py-4">7❤️</button>
+          <button class="card py-4">A♠️</button>
+        </div>
+      </div>
+      <div class="box p-4">
+        <h1>♠️</h1>
+        <div class="cards"></div>
+      </div>
+      <div class="box p-4">
+        <h1>❤️</h1>
+        <div class="cards"></div>
+      </div>
+      <div class="box p-4">
+        <h1>♣️</h1>
+        <div class="cards"></div>
+      </div>
+      <div class="box p-4">
+        <h1>♦️</h1>
+        <div class="cards"></div>
+      </div>
+    </section>
+
+    <footer class="footer notification has-background-info mt-0 mb-0">
+      <div class="content has-text-centered">
+        <p id="results"></p>
+      </div>
+    </footer>
+
+    <script src="randomCards.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

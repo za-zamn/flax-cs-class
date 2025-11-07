@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr repeat(5, 3fr);
+}
+
+#grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#grid-item-2 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+#grid-item-5, #grid-item-18 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+#grid-item-9 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+}
+
+#grid-item-14 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+}

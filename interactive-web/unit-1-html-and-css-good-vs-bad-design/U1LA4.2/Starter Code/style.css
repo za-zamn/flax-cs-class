@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px 5px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.box {
+  border: 2px solid fuchsia;
+  height: 200px;
+  padding: 10px;
+}
+
+/* CODE ALONG: Write a media query to change the styling on screens that have a min-width of 768px that changes the grid to three columns and changes the color of the border*/
+
+
+/* INDEPENDENT PRACTICE: Write a media query to change the styling on screens that have a min-width of 390 that changes the grid to two columns, reduces the box height to 100px, reduces padding to 5px, and reduces the border weight to 1px */
+
+

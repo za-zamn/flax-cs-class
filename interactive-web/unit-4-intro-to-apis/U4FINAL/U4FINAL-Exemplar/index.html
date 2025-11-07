@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>War Game</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body>
+    <header id="head"></header>
+    <main id="main-content">
+      <section id="banner">
+        <h1>WAR</h1>
+      </section>
+      <section id="game">
+        <div class="player">
+          <h2>Player 1</h2>
+          <div class="cards">
+            <img src="https://deckofcardsapi.com/static/img/back.png" alt="Back of card deck">
+            <span id="player1CardImage"><img src="https://deckofcardsapi.com/static/img/back.png" alt="Back of card deck"></span>
+          </div>  
+        </div>
+        <div class="player">
+          <h2>Player 2</h2>
+          <div class="cards">
+            <span id="player2CardImage"><img src="https://deckofcardsapi.com/static/img/back.png" alt="Back of card deck"></span>
+            <img src="https://deckofcardsapi.com/static/img/back.png" alt="Back of card deck">  
+          </div>
+        </div>
+      </section>
+      <section id="total-counts">
+        <p class="total">Total cards = <span id="player1DeckCount">0</span></p>
+        <p class="total">Total cards = <span id="player2DeckCount">0</span></p>
+      </section>
+      <section id="buttons">
+        <button id="draw" class="button">Draw</button>
+        <button id="continue" class="button" disabled>Continue</button>
+      </section>
+    </main>
+    <footer id="foot"></footer>
+
+    
+    <!-- <script src="sampleData.js"></script> -->
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

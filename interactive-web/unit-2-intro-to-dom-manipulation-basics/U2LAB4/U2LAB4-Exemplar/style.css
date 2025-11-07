@@ -1,0 +1,126 @@
+/* The first several elements that are styled are really just for the purpose of having */
+/* Border-box sizing, Default to a sans-serif font throughout */
+*, *:before, *:after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } html { font-family: sans-serif; }
+
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+.sr-only {
+  opacity: 0;         /* hide it visually */
+  z-index: -1;        /* avoid unintended clicks */
+  position: absolute; /* don't affect other elements positioning */
+}
+
+/* Rounded sliders */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: orange;
+  -webkit-transition: .1s;
+  transition: .1s;
+  border-radius: 34px;
+}.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .1s;
+  transition: .1s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: lightskyblue;
+}input:focus + .slider {
+  box-shadow: 0 0 1px lightskyblue;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Black background color */
+body {
+  background-color: ivory;
+  margin: 20px;
+}
+
+.light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* put everything inside a wrapper so  */
+#wrapper {
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+  background-color: grey;
+  margin-top: 0;
+  min-height: 100vh;
+}
+
+.row {
+  padding-top: 50px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+h2 {
+  color: ivory;
+  font-size: xx-large;
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+.main {
+  justify-content: center;
+  gap: 100px;
+}
+
+.item {
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  margin: 20px;
+  transition: 0.5s;
+}
+
+.lightbulb {
+  font-size: 100px;
+}
+
+.active {
+  background: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 35px white;
+}
+
+.hidden {
+  display: none;
+}
+

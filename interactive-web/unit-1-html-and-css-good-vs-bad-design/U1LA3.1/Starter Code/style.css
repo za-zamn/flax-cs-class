@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  height: 100vh;
+
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer"
+}
+
+header, main, sidebar, footer {
+  display: grid;
+  border-radius: 15px;
+  text-align: center;
+  justify-content: center;
+}
+
+header {
+  grid-area: header;
+  border: 2px solid orange;
+  background-color: orange;
+}
+
+main {
+  grid-area: main;
+  border: 2px solid cornflowerblue;
+  background-color: cornflowerblue;
+}
+
+sidebar {
+  grid-area: sidebar;
+  border: 2px solid red;
+  background-color: red;
+}
+
+footer {
+  grid-area: footer;
+   border: 2px solid green;
+   background-color: green;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: sans-serif;
+  padding: 50% auto;
+  margin: auto;
+}

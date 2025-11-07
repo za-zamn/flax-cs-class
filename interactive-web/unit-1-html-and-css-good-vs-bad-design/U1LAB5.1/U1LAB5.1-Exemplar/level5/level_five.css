@@ -1,0 +1,83 @@
+/* Notice the "grid-area" */
+.webpage {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 40px auto 120px;
+  grid-template-areas:
+    "sidebar  header"
+    "sidebar  main"
+    "footer   footer";
+}
+/* Used in the following rulesets */
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+.sidebar {
+  grid-area: sidebar;
+
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.profile-pic {
+  width: 100%;
+  border-radius: 50%;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 2px; 
+}
+.name {
+  font-size: larger;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+.user-name {
+  color: white;
+}
+.side-item {
+  text-align: right;
+  font-size: large;
+}
+.side-item:hover {
+  font-weight: bold;
+  color: #588157;
+}
+
+/* Insert @Media queries here! */
+@media (max-width: 992px) {
+    .webpage {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 40px auto 120px;
+        grid-template-areas:
+            "sidebar"
+            "header"
+            "main"
+            "footer";
+    }
+    .sidebar {
+        flex-direction: row;
+    }
+    .profile-pic {
+        width: auto;
+        height: 100%;
+    }
+    .name {
+        margin: 0;
+    }
+    button {
+        display: none;
+    }
+    .side-item {
+        display: none;
+    }
+}

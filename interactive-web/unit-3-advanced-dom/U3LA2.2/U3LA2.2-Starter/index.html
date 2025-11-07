@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Type Ahead Search</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body
+    class="is-flex is-flex-direction-column is-justify-content-space-between"
+  >
+    <section class="hero is-small notification is-info has-text-centered">
+      <div class="hero-body">
+        <h1 id="main-title" class="title is-size-1">Search State & Capital</h1>
+      </div>
+    </section>
+    <section class="section p-1">
+      <div class="container">
+        <h1 class="title">Find a State</h1>
+        <h2 class="subtitle">
+          Use the search bar to search by state name or capital name.
+        </h2>
+      </div>
+    </section>
+
+    <section id="search-bar">
+      <div class="container mb-5">
+        <div class="dropdown">
+          <div class="field">
+              <input class="input" type="search" placeholder="Search..." />
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item" onclick="">CAPITAL, STATE</a>
+            </div>
+          </div>
+        </div>
+        <div id="states-grid">
+          <!-- This is where the badges go -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer notification is-danger mt-5 mb-0">
+      <div class="content has-text-centered">
+        <p id="results"></p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+	"name": "u4la3-exemplar",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@giphy/js-fetch-api": "^4.9.1",
+		"parcel": "^2.8.3"
+	}
+}

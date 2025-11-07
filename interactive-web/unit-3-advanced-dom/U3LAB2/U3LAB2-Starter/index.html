@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Fuzzy Matching Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body
+    class="is-flex is-flex-direction-column is-justify-content-space-between"
+  >
+
+    <section class="hero is-small notification is-warning has-text-centered">
+      <div class="hero-body">
+        <h1 id="main-title" class="title is-size-1">Fuzzy Matching Quiz</h1>
+      </div>
+    </section>
+
+    <section class="section p-1">
+      <div class="container">
+        <h1 class="title">Another Quick Personality Quiz</h1>
+        <form action="#">
+          <!-- Table -->
+          <fieldset class="question" id="q1">
+            <legend class="subtitle">Select 1 attribute per row in the table.</legend>
+            <table class="table is-striped is-hoverable">
+              <thead>
+                <th scope="col">Question</th>
+                <th scope="col">Option 1</th>
+                <th scope="col">Option 2</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">How do you get your energy?</th>
+                  <td>
+                    <input type="radio" id="E" name="first_letter" value="E" />
+                    <label for="E">Externally; through friends and family.</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="I" name="first_letter" value="I" />
+                    <label for="I">Internally; through reflection and solitude.</label>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    How do you see the world & gather information?
+                  </th>
+                  <td>
+                    <input type="radio" id="S" name="second_letter" value="S" />
+                    <label for="S">Solely with the facts in front of me.</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="N" name="second_letter" value="N" />
+                    <label for="N"
+                      >With my intuition and theories about the world.</label
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">How do you make your decisions?</th>
+                  <td>
+                    <input type="radio" id="T" name="third_letter" value="T" />
+                    <label for="T"
+                      >Logically, unbiasedly, and by thoroughly thinking about it.</label
+                    >
+                  </td>
+                  <td>
+                    <input type="radio" id="F" name="third_letter" value="F" />
+                    <label for="F"
+                      >Consider my values and the other people involved.</label
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">How much do you like to plan ahead?</th>
+                  <td>
+                    <input type="radio" id="J" name="fourth_letter" value="J" />
+                    <label for="J">A lot! I need plans and structure.</label>
+                  </td>
+                  <td>
+                    <input type="radio" id="P" name="fourth_letter" value="P" />
+                    <label for="P">I go with the flow and try keep it simple.</label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+
+            <!-- Submit Button -->
+            <button>See Results</button>
+          </fieldset>
+        </form>
+
+        <container id="personality-grid">
+          <!-- This is where the badges go -->
+          
+        </container>
+      </div>
+    </section>
+
+    <footer class="footer notification is-warning mt-5 mb-0">
+      <div class="content has-text-centered">
+        <p id="results" class="is-size-1"></p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

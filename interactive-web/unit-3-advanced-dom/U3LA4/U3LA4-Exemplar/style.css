@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  min-height: 100vh;
+}
+
+#main-title {
+  font-family: 'Merriweather', serif;
+}
+
+#controls {
+  width: 100%;
+}
+
+.checkbox:hover {
+  color: inherit;
+}
+
+#accomplishments {
+  width: 100%;
+  margin: 0 20px;
+  border: 1px dashed goldenrod;
+  padding: 2px 10px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: x-large;
+  gap: 10px;
+}
+
+#accomplishments-grid {
+  width: 100%;
+}
+
+.field {
+  margin-top: 20px;
+}
+
+.box {
+  min-width: 500px;
+  max-width: 800px;
+}

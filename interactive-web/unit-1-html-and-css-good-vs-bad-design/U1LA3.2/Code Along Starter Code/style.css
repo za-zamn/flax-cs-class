@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/*Add styling below to experiment with flex fomatting */
+
+.flex-container {
+  display: flex;
+  padding: 15px 25px;
+  gap: 10px;
+}
+
+.flex-item {
+  padding: 10px 5px;
+  border: 2px solid purple;
+}
+
+/* #flex-one {
+  flex-grow: 2;
+  order: 1;
+}
+
+#flex-two {
+  flex-shrink: 1;
+  order: 0;
+}
+
+#flex-three {
+  order: 2;
+  align-self: center;
+}
+
+#flex-four {
+  order: -1;
+} */
+
+
+/*Add styling below to refine grid formatting */
+
+.grid-container {
+  display: grid;
+  padding: 15px 25px;
+  gap: 10px;
+}
+
+
+.grid-item {
+  padding: 10px 5px;
+  border: 2px solid green;
+}

@@ -1,0 +1,25 @@
+const shuffledArray = (numElements) => {
+    
+    // Create an array of n values
+    let array = [];
+    while( numElements != 0 ) {
+        array.push(numElements);
+        numElements--;
+    }
+
+    let currentIndex = array.length,  randomIndex;
+  
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
+  
+      // Pick a remaining element.
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+  
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  
+    return array;
+}

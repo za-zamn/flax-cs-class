@@ -1,0 +1,26 @@
+{
+  "name": "U5LA3",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Practice developing a socket server",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,html,css index.js",
+    "lint": "eslint --fix ."
+  },
+  "keywords": [
+    "websocket"
+  ],
+  "author": "Kyle Coberly",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}

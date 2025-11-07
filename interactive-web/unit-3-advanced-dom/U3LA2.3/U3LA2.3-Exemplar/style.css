@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  min-height: 100vh;
+}
+
+#main-title {
+  font-family: 'Merriweather', serif;
+}
+
+#search-bar div.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 720px) {
+  #fruits-holder div.container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+}
+
+p.card-header-title {
+  color: inherit;
+}
+
+#songs-grid {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dropdown {
+  width: 600px;
+} .field {
+  width: 100%;
+} .dropdown-content {
+  max-height: 15em;
+  overflow: auto;
+  width: 600px;
+}

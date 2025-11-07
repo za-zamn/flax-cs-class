@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap");
+
+body {
+  min-height: 100vh;
+}
+
+#main-title {
+  font-family: "Oleo Script", cursive;
+}
+
+#fruits-holder div.container {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 720px) {
+  #fruits-holder div.container {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+}
+
+button.button.is-selected {
+  background-color: seagreen;
+  color: white;
+}
+
+p.card-header-title {
+  color: inherit;
+}

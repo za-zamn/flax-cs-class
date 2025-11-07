@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    height:100%;
+    width:100%;
+}
+
+.item {
+  height: 100%;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.item-1 { grid-area: item-1; background-color: aqua; }
+.item-2 { grid-area: item-2; background-color: rgb(224, 245, 173); }
+.item-3 { grid-area: item-3; background-color: rgb(147, 141, 255); }
+.item-4 { grid-area: item-4; background-color: rgb(0, 200, 90); }
+.item-5 { grid-area: item-5; background-color: rgb(249, 209, 143); }
+.item-6 { grid-area: item-6; background-color: rgb(252, 157, 184); }
+.item-7 { grid-area: item-7; background-color: rgb(245, 255, 137); }
+.item-8 { grid-area: item-8; background-color: rgb(116, 112, 255); }
+.item-9 { grid-area: item-9; background-color: rgb(43, 0, 255); }
+.item-10 { grid-area: item-10; background-color: rgb(0, 229, 4); }
+.item-11 { grid-area: item-11; background-color: rgb(173, 173, 173); }
+.item-12 { grid-area: item-12; background-color: rgb(255, 0, 208); }
+
+img
+{
+    width:100%;
+    height:100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  height: 100%;
+  grid-template-areas: 
+  "item-1 item-1 item-1 item-1 item-1 item-1 item-1 item-1"
+  "item-2 item-5 item-5 item-3 item-3 item-3 item-3 item-3"
+  "item-2 item-5 item-5 item-3 item-3 item-3 item-3 item-3"
+  "item-4 item-4 item-4 item-4 item-4 item-4 item-4 item-4"
+  "item-6 item-6 item-7 item-7 item-7 item-7 item-8 item-8"
+  "item-9 item-9 item-10 item-10 item-11 item-11 item-12 item-12"
+  "item-9 item-9 item-10 item-10 item-11 item-11 item-13 item-13"
+  "item-9 item-9 item-10 item-10 item-11 item-11 item-13 item-13"
+  ;
+}

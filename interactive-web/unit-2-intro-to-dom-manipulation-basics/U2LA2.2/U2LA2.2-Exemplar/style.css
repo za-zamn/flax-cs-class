@@ -1,0 +1,40 @@
+.button {
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+button#apple {
+  background-color: #ba1a62;
+}
+button#banana {
+  background-color: #c8cd7d;
+}
+#mango {
+  background-color: #e4633b;
+}
+
+#shopping-cart {
+  background-color: #e1ebe4;
+  max-width: 600px;
+  min-height: 400px;
+  border-radius: 20px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+img {
+  max-width: 50px;
+}
+
+#single-button {
+  display: flex;
+  justify-content: center;
+}
+
+#clear-button {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 200px;
+} #clear-button:hover {
+  box-shadow: 0.5px 0.5px 2px grey;
+}

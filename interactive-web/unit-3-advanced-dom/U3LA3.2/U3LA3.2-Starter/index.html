@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accomplishment Tracker</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body class="is-flex is-flex-direction-column is-justify-content-space-between">
+    
+    <section class="hero is-small notification has-background-warning has-text-centered">
+      <div class="hero-body"></div>
+    </section>
+    <div class="title has-text-centered">Accomplishment Tracker</div>
+    <section class="section p-1">
+      <div class="box m-5 p-5">
+        <div id="controls" class="container">
+          <label class="checkbox">
+            <input id="dark-mode" type="checkbox">
+            Dark Mode
+          </label>
+          <hr>
+          <div class="field">
+            <label class="label has-text-danger">Accomplishment Title</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="e.g. Honor Roll">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label has-text-danger">Date</label>
+            <div class="control">
+              <input class="input" type="date">
+            </div>
+          </div>
+          <button class="button is-danger">Add Accomplishment</button>
+        </div>
+        <div id="accomplishments">
+          <h1>Accomplishments</h1>
+          <div id="accomplishments-grid">
+            <!-- Accomplishment cards here -->
+            <div class="card has-background-warning-light">
+              <header class="card-header">
+                <p class="card-header-title is-size-7">
+                  Honor Roll!
+                </p>
+                <p class="card-header-title is-size-7 is-justify-content-flex-end">
+                  01/01/1992
+                </p>
+                <button class="card-header-icon">
+                  <span class="icon has-text-danger">
+                    <i class="fas fas-ban">x</i>
+                  </span>
+                </button>
+              </header>
+            </div>
+
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer notification has-background-warning mt-1 mb-0">
+      <div class="content has-text-centered">
+        <p id="results"></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+}
+
+img {
+  height: 80px;
+}
+
+#navbar-one {
+  height: 60px;
+  padding: 10px;
+  background-color: lightgray;
+
+  /* display: flex and align-items */
+  display: flex;
+  align-items: center;
+}
+
+#navbar-two {
+  height: 120px;
+  padding: 10px;
+  background-color: whitesmoke;
+
+  /* display: flex, align-items, and justify-content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  margin: 10px;
+}
+
+.album {
+  margin: 0 50px;
+}
+
+#circle {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+}

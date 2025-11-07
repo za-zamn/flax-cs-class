@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="level_three.css" />
+    <title>Level 3</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Another Quick Personality Quiz</h1>
+      <form action="#">
+        <!-- Table -->
+        <fieldset class="question" id="q1">
+          <legend>Select 1 attribute per row in the table.</legend>
+          <div class="full-table">
+            <h3>Rapid Myers Briggs Table</h3>
+            <div class="table">
+              <div class="item heading">Question</div>
+              <div class="item heading">Option 1</div>
+              <div class="item heading">Option 2</div>
+              <div class="item heading">How do you get your energy?</div>
+              <div class="item">
+                <input type="radio" id="E" name="first_letter" value="E" />
+                <label for="E">Externally; through friends and family.</label>
+              </div>
+              <div class="item">
+                <input type="radio" id="I" name="first_letter" value="I" />
+                <label for="I">Internally; through reflection and solitude.</label>
+              </div>
+              <div class="item heading">How do you see the world & gather information?</div>
+              <div class="item">
+                <input type="radio" id="S" name="second_letter" value="S" />
+                <label for="S">Solely with the facts in front of me.</label>
+              </div>
+              <div class="item">
+                <input type="radio" id="N" name="second_letter" value="N" />
+                <label for="N">With my intuition and theories about the world.</label>
+              </div>
+              <div class="item heading">How do you make your decisions?</div>
+              <div class="item">
+                <input type="radio" id="T" name="third_letter" value="T" />
+                <label for="T">Logically, unbiasedly, and by thoroughly thinking about it.</label>
+              </div>
+              <div class="item">
+                <input type="radio" id="F" name="third_letter" value="F" />
+                <label for="F">Consider my values and the other people involved.</label>
+              </div>
+              <div class="item heading">How much do you like to plan ahead?</div>
+              <div class="item">
+                <input type="radio" id="J" name="fourth_letter" value="J" />
+                <label for="J">A lot! I need plans and structure.</label>
+              </div>
+              <div class="item">
+                <input type="radio" id="P" name="fourth_letter" value="P" />
+                <label for="P">I go with the flow and try keep it simple.</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Name -->
+        <div class="info">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Name"
+            class="info-input"
+          />
+        </div>
+
+        <!-- Birthday -->
+        <div class="info">
+          <label for="birthday">Your Birth Date</label>
+          <input type="date" id="birthday" name="birthday" class="info-input" />
+        </div>
+
+        <!-- Email -->
+        <div class="info">
+          <label for="email">You Email</label>
+          <input
+            type="text"
+            id="email"
+            name="user_email"
+            placeholder="email@email.com"
+            class="info-input"
+          />
+        </div>
+
+        <!-- Submit Option -->
+        <fieldset class="info" id="q5">
+          <legend>How would you like to receive your results?</legend>
+          <label>Choose method from drop down...</label>
+          <select name="submit_method" id="method" class="info-input">
+            <option value="email">Email results only</option>
+            <option value="visual">See results only</option>
+            <option value="both">Email and see results</option>
+          </select>
+
+          <!-- Submit Button -->
+          <input
+            type="image"
+            name="submitbutton"
+            src="img/submit.png"
+            id="results"
+          />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

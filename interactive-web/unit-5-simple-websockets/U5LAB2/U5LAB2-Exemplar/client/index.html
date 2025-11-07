@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="US-en">
+  <head>
+    <title>Mesg</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf8" />
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+    <script src="utilities.js" defer></script>
+    <script src="starter.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="join-page">
+      <header>
+        <h1>Mesg</h1>
+      </header>
+      <form id="join-form">
+        <label for="screen-name">What's your name?</label>
+        <input
+          id="screen-name"
+          required
+          maxlength="16"
+          name="screen-name"
+          type="text"
+        />
+
+        <button type="submit">Join</button>
+      </form>
+    </div>
+    <div id="chat-page">
+      <div class="application-wrapper">
+        <header>
+          <h1>Mesg</h1>
+        </header>
+        <main>
+          <ol id="messages" aria-role="log"></ol>
+          <form id="new-message-form">
+            <textarea
+              id="message"
+              name="message"
+              aria-label="new message"
+              type="text"
+              required
+              placeholder="Enter a message"
+            ></textarea>
+            <div class="actions">
+              <button type="submit" aria-label="send">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smoothie Heaven</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+  <body
+    class="is-flex is-flex-direction-column is-justify-content-space-between"
+  >
+    <section class="hero is-small notification is-primary has-text-centered">
+      <div class="hero-body">
+        <h1 id="main-title" class="title is-size-1">Smoothie Heaven</h1>
+        <p class="subtitle">Custom-built smoothies, ready for pickup.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">Select your Fruits</h1>
+        <h2 class="subtitle">
+          Click on the items you'd like in your smoothie.
+        </h2>
+      </div>
+    </section>
+
+    <section id="fruits-holder">
+      <div class="container">
+          <button class="button fruit-button" id="banana">
+            Banana
+          </button>
+          <button class="button fruit-button" id="strawb">
+            Strawberry
+          </button>
+          <button class="button fruit-button" id="froyo">
+            Frozen Yogurt
+          </button>
+          <button class="button fruit-button" id="peach">
+            Peach
+          </button>
+          <button class="button fruit-button" id="oj">
+            Orange Juice
+          </button>
+          <button class="button fruit-button" id="pro">
+            Protein Powder
+          </button>
+          <button class="button fruit-button" id="pb">
+            Peanut Butter
+          </button>
+          <button class="button fruit-button" id="blueberries">
+            Blueberries
+          </button>
+          <button class="button fruit-button" id="mango">
+            Mango
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer notification is-primary mt-5 mb-0">
+      <div class="content has-text-centered">
+        <p class="subtitle" aria-live="polite">Enjoy your <span id="results"></span>Smoothie!</p>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Add NAVBAR right below this line :: Copied and pasted - change image, 'documentation' to Computers "#computers"-->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          <img
+            src="img/computer.webp"
+            width="80"
+            height="28"
+          />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item"> Home </a>
+
+          <a class="navbar-item" href="#computers"> Computers </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link"> More </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item"> About </a>
+              <a class="navbar-item"> Jobs </a>
+              <a class="navbar-item"> Contact </a>
+              <hr class="navbar-divider" />
+              <a class="navbar-item"> Report an issue </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light"> Log in </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add HERO right below this line -->
+    <section class="hero is-fullheight-with-navbar blue-image">
+      <div class="hero-body">
+        <p class="title has-text-white is-size-1 has-background-link px-3">
+          Welcome to CheeseBook
+        </p>
+      </div>
+    </section>
+
+    <div class="section">
+      <!-- Add CARDS right below this line -->
+      <div class="columns is-centered">
+        <div class="card column m-3">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">John Smith</p>
+                <p class="subtitle is-6">@johnsmith</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+              <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
+
+        <div class="card column m-3">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">John Smith</p>
+                <p class="subtitle is-6">@johnsmith</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+              <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
+
+        <div class="card column m-3">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">John Smith</p>
+                <p class="subtitle is-6">@johnsmith</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+              <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Computers -->
+      <div id="computers" class="columns is-centered has-text-centered">
+        <div class="column">
+          <figure class="image">
+            <img src="img/computer.webp" alt="Extra small computer" />
+          </figure>
+          <h2>CheeseBook Mini</h2>
+          <p>$999</p>
+          <button class="button">Buy Now</button>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="img/computer.webp" alt="Small computer" />
+          </figure>
+          <h2>CheeseBook Light</h2>
+          <p>$1199</p>
+          <button class="button">Buy Now</button>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="img/computer.webp" alt="Medium computer" />
+          </figure>
+          <h2>CheeseBook Pro</h2>
+          <p>$1299</p>
+          <button class="button">Buy Now</button>
+        </div>
+        <div class="column">
+          <figure class="image">
+            <img src="img/computer.webp" alt="Large computer" />
+          </figure>
+          <h2>CheeseBook Plus</h2>
+          <p>$1999</p>
+          <button class="button">Buy Now</button>
+        </div>
+      </div>
+
+      <!-- Picture Ad 1 -->
+      <div class="columns is-centered mt-5">
+        <div class="card column is-three-fifths">
+          <div class="card-content">
+            <div class="content has-text-centered">
+              <h1>
+                "We love using CheeseBook. Connecting with my team is easier
+                than ever! I'm never going back to what ever junk I used to
+                use."
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="card column">
+          <div class="card-image">
+            <figure class="image">
+              <img
+                src="img/Ad1.jpg"
+                alt="Company team smiling and looking at a laptop on a table together."
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Picture Ad 2 -->
+      <div class="columns mt-5">
+        <div class="card column is-one-quarter">
+          <div class="card-image">
+            <figure class="image">
+              <img
+                src="img/Ad2a.jpg"
+                alt="Woman and man bumping fists at a table with a laptop"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="card column">
+          <div class="card-content">
+            <div class="content has-text-centered">
+              <h1>
+                "It makes designing so much easier, and the pictures are super
+                clear. CheeseBook makes me feel apart of the team again."
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="card column is-one-quarter">
+          <div class="card-image">
+            <figure class="image">
+              <img
+                src="img/Ad2b.jpg"
+                alt="Woman and man bumping fists at a table with a laptop"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Picture Ad 3 -->
+      <div class="columns mt-5">
+        <div class="card column is-two-fifths">
+          <div class="card-image">
+            <figure class="image">
+              <img
+                src="img/Ad3.jpg"
+                alt="Woman and man bumping fists at a table with a laptop"
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="card column">
+          <div class="card-content">
+            <div class="content has-text-centered">
+              <h1>
+                "The applications that come built in is what sold the CheeseBook
+                for me. The processing speed is better than I imagined. I love
+                it!"
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Add FOOTER right below this line :: Change Color? and Text -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  min-height: 100vh;
+}
+
+#main-title {
+  font-family: 'Merriweather', serif;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  height: 100%;
+  width: 300px;
+  align-items: center;
+} 
+/* .box:hover {
+  cursor: pointer;
+} */
+
+
+.cards {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.card {
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.is-selected {
+  background-color: yellow;
+  box-shadow: -1px 1px 1px black;
+}

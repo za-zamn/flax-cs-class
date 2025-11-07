@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+}
+
+.sidebar {
+  width: 150px;
+  background-color: green;
+  color: whitesmoke;
+  height: 100vh;
+  padding: 20px;
+}
+
+.item {
+  font-weight: bold;
+  margin: 10px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif;
+}

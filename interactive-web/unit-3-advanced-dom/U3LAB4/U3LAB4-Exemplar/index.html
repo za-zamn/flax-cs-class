@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game 20 in 10</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body class="is-flex is-flex-direction-column is-justify-content-space-between">
+    <section class="hero is-small notification has-background-info has-text-centered">
+      <div class="hero-body"></div>
+    </section>
+
+    <h1 class="title has-text-centered">Twenty in Ten</h1>
+    <h2 class="subtitle has-text-centered">Can you get hit the buttons in order in under 10 seconds?</h2>
+    <div id="timer-text" class="subtitle has-text-centered">
+      Timer: <span id="timer">10</span>
+    </div>
+
+    <section class="section">
+      <!-- buttons -->
+    </section>
+
+    <div id="stat-group">
+      <div id="userID" class="subtitle"><!--Your stats--></div> 
+      <ul id="stats">
+        <li>Plays: <span id="plays">0</span></li>
+        <li>Current Level: <span id="currentLevel">3</span></li>
+        <li>Highest Level: <span id="highestLevel">3</span></li>
+      </ul>
+    </div>
+
+    <footer class="footer notification has-background-info mt-0 mb-0">
+      <div class="content has-text-centered">
+        <p id="results"></p>
+      </div>
+    </footer>
+
+    <script src="utilities.js"></script>
+    <script src="localStorageScript.js"></script>
+    <script src="gameScript.js"></script>
+  </body>
+</html>

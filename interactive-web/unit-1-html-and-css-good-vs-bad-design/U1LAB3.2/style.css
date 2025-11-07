@@ -1,0 +1,24 @@
+body {
+  margin: 20px;
+}
+
+ul {
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: larger;
+  margin: 20px;
+}
+
+ul ul {
+  padding: 0px;
+  margin-left: 50px;
+}
+
+.sub-li {
+  margin: 2px;
+}

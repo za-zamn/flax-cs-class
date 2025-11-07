@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#head, #foot {
+  background-color: brown;
+  height: 100px;
+}
+
+#main-content {
+  padding: 50px 100px;
+  min-height: calc(100vh - 300px);
+}
+
+#banner {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: x-large;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#score {
+  font-size: larger;
+  margin: 50px 0px;
+  text-align: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  
+} .button {
+  border-radius: 5px;
+  height: 50px;
+  width: 125px;
+  font-size: large;
+}#lower {
+  background-color: lightsalmon;
+} #higher {
+  background-color: lightskyblue;
+} #draw-button {
+  background-color: brown;
+  color: azure;
+} #refresh-button {
+  background-color: rgb(227, 184, 184);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.total {
+  font-size: larger;
+}
+
+.correct {
+  border: 10px lightgreen solid;
+}

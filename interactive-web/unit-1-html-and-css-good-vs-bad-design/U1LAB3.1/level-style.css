@@ -1,0 +1,39 @@
+/* Selects all div elements where the parent element has a class container AKA all of the individual blocks in the grid */
+.container > div {
+  align-items: center;
+  border: solid grey thin;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+
+body {
+  margin: 20px;
+}
+
+/* Creates a pattern of colors for the divs, these colors will repeat every 5 elements */
+.container > div:nth-child(1n) {
+  background-color: #b8dfff;
+}
+
+.container > div:nth-child(2n) {
+  background-color: #c6ffb8;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #fff0b8;
+}
+
+.container > div:nth-child(4n) {
+  background-color: #ffcbb8;
+}
+
+.container > div:nth-child(5n) {
+  background-color: #f8b8ff;
+}
+
+.container > div:nth-child(6n) {
+    background-color: #ffb8d4;
+  }

@@ -1,0 +1,53 @@
+body {
+  margin: 30px;
+}
+
+div {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #e63946;
+}
+
+p {
+  font-family: "Roboto Mono";
+}
+
+li {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#header {
+  background-color: #f1faee;
+  font-family: "Sofia";
+}
+
+#quote {
+  margin-left: 20px;
+}
+
+#main-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.section {
+  background-color: #a8dadc;
+}
+
+.feature {
+  background-color: #457b9d;
+  color: #f1faee;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.feature img {
+  width: 300px;
+}

@@ -1,0 +1,11 @@
+img {
+  max-width: 80%;
+}
+
+p {
+  border-radius: 10px;
+}
+
+.blue-image {
+  background-image: url("img/hero.jpg");
+}

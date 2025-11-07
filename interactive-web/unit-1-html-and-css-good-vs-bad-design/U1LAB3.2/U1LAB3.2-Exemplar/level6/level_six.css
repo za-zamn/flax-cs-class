@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-size: small;
+}
+
+h4 {
+  color: #7d7d7d;
+}
+
+p {
+  line-height: 2;
+}
+
+input {
+  margin: 0px 5px;
+  padding: 0px 10px;
+  height: 50px;
+}
+
+#top-half {
+  margin: 0px 15px;
+
+  /* step 3 */
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+
+#navbar {
+  padding: 2px 0px;
+  margin-bottom: 90px;
+
+  /* step 1 */
+  display: flex;
+  justify-content: space-between;
+  /* step 4 */
+  grid-column: 1 / -1;
+}
+
+#logo-image {
+  width: 135px;
+}
+
+/* step 2 */
+#header-tabs {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#featured-artist {
+  color: black;
+}
+
+/* step 5 */
+#content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+#footer {
+  margin-top: 50px;
+  padding: 40px 80px;
+  background-color: #fafafa;
+  /* the last number ('a' in 'rgba') makes the color a bit see through */
+  color: rgba( 0, 0, 0, 0.56 ); 
+  text-align: center;
+}
+
+#button {
+  background-color: transparent;
+  border-radius: 0px;
+}
+
+/* turns the button black when hovered over */
+#button:hover {
+  background-color: black;
+  color: #fafafa;
+}
+
+#mailing-list {
+  margin-top: 100px;
+}
+
+.item {
+  margin: 20px;
+}
+
+.side-item {
+  margin-bottom: 20px;
+  color: #a0a0a0;
+}
+
+/* step 6 */
+.portrait {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.painting {
+  width: 100%;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fuzzy Matching</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body
+    class="is-flex is-flex-direction-column is-justify-content-space-between"
+  >
+    <section
+      class="hero is-small notification has-background-danger-light has-text-centered"
+    >
+      <div class="hero-body">
+        <h1 id="main-title" class="title is-size-1">🎶 Search for a Song 🎶</h1>
+      </div>
+    </section>
+    <section class="section p-1">
+      <div class="container">
+        <h1 class="title">Autocorrect Song Searcher</h1>
+        <h2 class="subtitle">
+          Use the search bar to search for a song by song name or artist. See if you can find #1 rank!
+        </h2>
+      </div>
+    </section>
+
+    <section id="search-bar">
+      <div class="container mb-5">
+        <div class="dropdown">
+          <div class="field">
+            <input class="input" type="search" placeholder="Search..." />
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content"></div>
+          </div>
+        </div>
+        <container id="songs-grid">
+          <!-- This is where the badges go -->
+          
+        </container>
+      </div>
+    </section>
+
+    <footer class="footer notification has-background-danger-light mt-5 mb-0">
+      <div class="content has-text-centered">
+        <p id="results"></p>
+      </div>
+    </footer>
+
+    <script src="./scripts/top200.js"></script>
+    <script src="./scripts/getMatches.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

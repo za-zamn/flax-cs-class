@@ -1,0 +1,40 @@
+.container {
+  display: grid;
+}
+
+#navbar {
+  background-color: #2e2e2e;
+  color: #c2c2c2;
+  height: 25px;
+  font-size: small;
+}
+
+#navbar2 {
+  height: 100px;
+  font-size: small;
+}
+
+#navbar3 {
+
+}
+
+/* Second half of page starts here */
+
+.main {
+  display: grid;
+  margin: 30px 175px;
+  gap: 30px;
+
+  /* Add the "grid-template-columns" here */
+}
+
+.promo {
+  height: 600px;
+}
+
+#small-promotion-1 {
+  background-color: black;
+  color: white;
+
+  /* Add the "grid-column" here */
+}
