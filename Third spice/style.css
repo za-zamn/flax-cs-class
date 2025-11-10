@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  width: 100%;
+	background-color: #fff986;
+}
+
+.green{
+	background-color:#BFDBD2;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color: #FFFFFF;
+}
+
+.yellow{
+	background-color:#F2EBC7;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color: #FFFFFF;
+}
+
+.blue{
+	background-color:#c7d7f2;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color: #FFFFFF;
+}
+
+.white{
+	background-color:#ffffff;
+	border: 2px solid;
+	border-radius: 25px;
+	border-color: #000000;
+}
