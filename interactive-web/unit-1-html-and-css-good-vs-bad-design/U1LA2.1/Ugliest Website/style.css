@@ -1,0 +1,44 @@
+body {
+   
+    background-image: url("assets/poopy.png");
+    color: #ff00b3;
+}
+
+h2 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#pagetitle {
+    background-color: rgb(170, 255, 0);
+    text-align: center;
+    padding: 100px;
+    border: solid;
+    border-width: 5px;
+    margin: 100px; 
+}
+
+.div {
+    background-color:#a8dfdd;
+	border: 1.5px solid;
+	border-radius: 25px;
+	border-color: #396463;
+	color: #396463;
+    padding: 20px;
+}
+
+.div2 {
+    background-color:#00d5ff;
+	
+	border-color: #000000;
+    padding: 20px;
+}
+
+.text1 {
+    color: rgb(39,140,90);
+}
+
+
+.center{
+    display: block;
+}
